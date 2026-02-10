@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carte de la Tunisie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Carte interactive de la Tunisie</h1>
+
+<img src="images/tunisie.png" usemap="#tunisieMap" alt="Carte de la Tunisie">
+
+<map name="tunisieMap">
+    <!-- Les coordonnées sont approximatives (ça suffit pour un projet universitaire) -->
+    <area shape="poly" coords="382,23,308,47,378,25,422,38,407,78,378,80,345,102,309,43"  href="javascript:void(0);" onclick="showInfo('bizerte'); return false;">
+    <area shape="poly" coords="426,56,413,78,415,89,438,83" href="javascript:void(0);" onclick="showInfo('ariana'); return false;"> 
+    <area shape="poly" coords="414,101,421,111,435,103,421,89,444,83,447,88,447,88" href="javascript:void(0);" onclick="showInfo('tunis'); return false;">
+    <area shape="poly"  coords="414,94,416,116,395,132,380,108,360,95,390,78,406,79" href="javascript:void(0);" onclick="showInfo('manouba'); return false;">
+    <area shape="poly"  coords="415,120,430,110,441,100,453,113,450,138,440,148" href="javascript:void(0);" onclick="showInfo('ben arous'); return false;">
+    <area shape="poly"  coords="286,69,294,89,292,100,304,124,299,151,322,161,348,147,373,152,394,130,364,95,342,109,307,49,295,56" href="javascript:void(0);" onclick="showInfo('beja'); return false;">
+    <area shape="poly"  coords="232,161,287,153,301,140,298,112,285,87,283,71,260,75,234,102,201,142"  href="javascript:void(0);" onclick="showInfo('jendouba'); return false;">
+    <area shape="poly"  coords="448,157,468,159,500,147,536,87,525,59,483,90,454,113"  href="javascript:void(0);" onclick="showInfo('nabeul'); return false;">
+    <area shape="poly"  coords="383,144,397,132,412,118,436,143,449,146,453,177,414,208,384,194,370,175"  href="javascript:void(0);" onclick="showInfo('zaghouan'); return false;">
+    <area shape="poly"  coords="380,152,343,148,326,162,287,149,292,172,315,206,302,230,296,258,340,282,326,250,345,254,381,191,364,174,378,168"  href="javascript:void(0);" onclick="showInfo('siliana'); return false;">
+    <area shape="poly"  coords="228,162,289,152,301,188,315,204,295,252,261,243,224,264,211,245,220,204"   href="javascript:void(0);" onclick="showInfo('kef'); return false;">
+    <area shape="poly"  coords="479,285,469,295,445,275,428,232,439,207,431,192,451,177,456,160,466,162,462,206,485,240,466,275"  href="javascript:void(0);" onclick="showInfo('sousse'); return false;">
+    <area shape="poly"  coords="427,193,439,212,428,228,439,268,429,294,432,327,414,349,403,324,377,324,355,306,328,254,355,250,353,223,385,198,415,212" href="javascript:void(0);" onclick="showInfo('kairouan'); return false;">
+    <area shape="poly"   coords="331,284,295,253,260,241,249,262,225,259,224,284,220,309,235,316,208,379,245,401,297,372,299,357,327,345,313,304" href="javascript:void(0);" onclick="showInfo('kasserine'); return false;">
+    <area shape="poly"  coords="487,242,494,245,502,243,507,258,527,264,524,272,501,287,486,283,465,281"   href="javascript:void(0);" onclick="showInfo('monastir'); return false;">
+    <area shape="poly"  coords="526,273,501,291,485,285,468,298,452,282,436,272,435,286,431,304,434,329,456,336,472,328,478,317,491,322,501,313,503,326,524,339,536,319,527,301" href="javascript:void(0);" onclick="showInfo('mahdia'); return false;">
+    <area shape="poly"  coords="479,319,487,322,498,316,524,339,493,404,445,431,410,465,374,449,402,431,416,416,395,404,426,328,457,340"  href="javascript:void(0);" onclick="showInfo('sfax'); return false;">
+    <area shape="poly"   coords="315,305,342,281,349,298,379,327,404,324,414,351,397,406,409,416,403,430,376,450,359,450,337,420,321,396,286,381,327,346" href="javascript:void(0);" onclick="showInfo('sidibouzid'); return false;">
+    <area shape="poly"  coords="245,405,287,378,300,396,326,396,332,418,355,437,355,456,319,466,236,482,201,463,192,444,196,416,219,391" href="javascript:void(0);" onclick="showInfo('gafsa'); return false;">
+    <area shape="poly"  coords="165,435,191,420,187,447,202,464,217,468,219,478,253,486,227,512,152,570,127,513,129,482" href="javascript:void(0);" onclick="showInfo('tozeur'); return false;">
+    <area shape="poly"  coords="157,566,263,482,331,470,330,518,361,546,353,555,385,596,398,603,397,662,370,656,221,691,207,623,151,595" href="javascript:void(0);" onclick="showInfo('kebili'); return false;">
+    <area shape="poly"  coords="329,461,352,460,372,453,391,464,410,470,422,512,454,537,442,566,404,586,377,587,355,559,361,548,332,527,322,497" href="javascript:void(0);" onclick="showInfo('gabes'); return false;">
+    <area shape="poly"  coords="375,590,417,582,426,571,438,569,460,540,491,533,499,503,518,509,528,518,511,533,496,530,487,560,496,563,515,555,515,544,522,542,535,552,535,576,544,598,571,602,585,607,577,674,593,692,576,714,545,724,557,709,545,704,528,612,476,611,474,596,402,621,401,600" href="javascript:void(0);" onclick="showInfo('mednin'); return false;">
+    <area shape="poly"  coords="404,623,436,610,469,595,473,609,523,617,550,713,537,724,482,772,468,799,447,801,428,827,447,914,397,980,363,992,307,755,222,693,376,657,402,675" href="javascript:void(0);" onclick="showInfo('tataouine'); return false;">
+
+    
+   
+</map>
+
+<!-- Modal popup -->
+<div id="regionModal" class="modal" aria-hidden="true">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()" aria-label="Fermer">&times;</button>
+    <div id="modalBody">
+      <!-- Contenu dynamique (titre, description, photo) -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
